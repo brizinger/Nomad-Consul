@@ -1,0 +1,17 @@
+{
+    "bootstrap": false,
+    "server": true,
+    "bind_addr": "192.168.50.13",
+    "advertise_addr": "192.168.50.13",
+    "datacenter": "dc1",
+    "data_dir": "/var/lib/consul",
+    "log_level": "DEBUG",
+    "enable_syslog" : true,
+    "node_name": "nomad-server3",
+    "encrypt": "R+YewmK8AoOZvV7k3feJSWqk9nSot2reVnf4iln1Kpc=",
+    "bootstrap_expect": 3,
+    "start_join": ["192.168.50.11", "192.168.50.12"],
+    "retry_join": ["192.168.50.13", "192.168.50.11", "192.168.50.12"],
+    "retry_interval" : "15s",
+    "rejoin_after_leave": true
+}
